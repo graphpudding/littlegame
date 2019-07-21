@@ -1,0 +1,63 @@
+ body{
+ 	background: #187fe0;
+ }
+ .app{
+ 	width: 700px;
+    height: 700px;
+    margin: auto;
+ }
+.board{
+	position: relative;
+	height: 400px;
+	width: 400px;
+	margin:0;
+	margin: auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-end;
+	align-items: stretch;
+	align-content: stretch;
+}
+	
+.square{
+	width: 133px;
+	border: solid 1px black;
+	box-sizing: border-box;
+	background: white;
+	border: solid 1px black;
+	background-size: cover;
+}
+.cross{
+	background-image: url(images/krest.png);
+}
+.circle{
+	background-image: url(images/krug.png);
+}
+.game-over{
+	position: absolute;
+	font-size: 40px;
+	top: 150px;
+	color: white;
+	width: 100%;
+	background: red;
+	text-align: center;
+}
+.count-marks{
+    font-size: 38px;
+    color: white;
+    text-align: center;
+}
+.count-wins{
+    font-size: 38px;
+    color: white;
+    text-align: center;
+}
+.new-game{
+	width: 123px;
+    height: 68px;
+    font-size: 24px;
+    background: red;
+    text-align: center;
+    color: white;
+    margin-left:290px;
+}

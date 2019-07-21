@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>test 1</title>
+	<link rel="stylesheet" type="text/css" href="css/css.css">
+</head>
+<div id="app" class="app">
+	<div class="count-wins">circle wins:{{circleCounterWins}} <br> cross wins:{{crossCounterWins}}</div>
+	<div class="board">
+		<div class="game-over">{{message}}</div>
+		 <div v-for="(square,index ) in squares" 
+		 :class="{'square':true, 'cross':square.cross,'circle':square.circle}"
+		 v-on:click="painting(index,$event)"></div>
+		 
+		
+	</div>
+	<div class="count-marks">circle on board:{{circleCounter}} <br> cross on board:{{crossCounter}}</div>
+		<button v-on:click="newGame"class="new-game">new game</button>
+</div>
+
+<script type="text/javascript" src="js/vue.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
